@@ -4,3 +4,6 @@
 [submodule "DevBooks-meneger-Vue-TS"]
 	path = DevBooks-meneger-Vue-TS
 	url = https://github.com/PauloHPMKT/DevBooks-meneger-Vue-TS
+[submodule "dev-books-front-user"]
+	path = dev-books-front-user
+	url = https://github.com/PauloHPMKT/dev-books-front-user
