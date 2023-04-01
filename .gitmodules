@@ -1,0 +1,6 @@
+[submodule "dev-books-api"]
+	path = dev-books-api
+	url = https://github.com/PauloHPMKT/dev-books-api
+[submodule "DevBooks-meneger-Vue-TS"]
+	path = DevBooks-meneger-Vue-TS
+	url = https://github.com/PauloHPMKT/DevBooks-meneger-Vue-TS
