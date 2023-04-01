@@ -62,7 +62,30 @@ $ git status
 Your branch is up-to-date with 'origin/master'.
 nothing to commit, working tree clean
 
+</hr>
+<strong>Submodule Foreach</strong>
+There is a foreach submodule command to run some arbitrary command in each submodule. This can be really helpful if you have a number of submodules in the same project.
+
+For example, let’s say we want to start a new feature or do a bugfix and we have work going on in several submodules. We can easily stash all the work in all our submodules.
+
+Ex:
+$ git submodule foreach 'git stash'
+Entering 'CryptoLibrary'
+No local changes to save
+Entering 'DbConnector'
+Saved working directory and index state WIP on stable: 82d2ad3 Merge from origin/stable
+HEAD is now at 82d2ad3 Merge from origin/stable
+Then we can create a new branch and switch to it in all our submodules.
+
+$ git submodule foreach 'git checkout -b featureA'
+Entering 'CryptoLibrary'
+Switched to a new branch 'featureA'
+Entering 'DbConnector'
+Switched to a new branch 'featureA'
+
 <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">Link to Git documentation</a>
 
 
-Obs: when updating local project with submodule is necessary update the main project into submodule too!
+Obs: 
+* when updating local project with submodule is necessary update the main project into submodule too!
+* every project keep your own commit tree
