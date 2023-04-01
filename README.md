@@ -5,8 +5,9 @@ Initialize submodules:
 * run git submodule update to fetch all data from the project and check out the appropriate commit listed in your superproject
 
 Another equivalent commands to initialize submodules:
-
+<!-- initialize submodules for all project in this context -->
 git submodule update --init --recursive --remote
+<!-- set a default branch (master ou main) for all projects into submodule -->
 git submodule foreach git checkout master
 
 Set initialize automaticaly submodules:
@@ -62,3 +63,6 @@ Your branch is up-to-date with 'origin/master'.
 nothing to commit, working tree clean
 
 <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">Link to Git documentation</a>
+
+
+Obs: when updating local project with submodule is necessary update the main project into submodule too!
