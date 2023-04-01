@@ -1,0 +1,3 @@
+[submodule "dev-books-api"]
+	path = dev-books-api
+	url = https://github.com/PauloHPMKT/dev-books-api
